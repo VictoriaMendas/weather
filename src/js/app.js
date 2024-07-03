@@ -1,4 +1,4 @@
-import { getCurrentWeather } from './openWeather-Api';
+import { getCurrentWeather, getWeatherHourly } from './openWeather-Api';
 import { createMarkup } from './render-markup';
 
 const form = document.querySelector('.form');
@@ -11,7 +11,14 @@ form.addEventListener('submit', async e => {
 
   try {
     const { data } = await getCurrentWeather(searchQuery);
-    console.log(data);
+
     output.innerHTML = createMarkup(data);
   } catch (error) {}
 });
+
+function currentTime() {
+  const date = new Date(1719968183);
+}
+currentTime();
+переделай полностью функцию запроса
+и все что с ней связано а так жн рендел функцию

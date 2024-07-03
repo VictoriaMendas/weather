@@ -23,3 +23,42 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.section-weather {
+  font-size: 12px;
+}
+.container {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.form input {
+  margin-bottom: 12px;
+  margin-right: 8px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.form button {
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: blueviolet;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .section-weather {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
+  .section-weather {
+    font-size: 20px;
+  }
+}
